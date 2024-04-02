@@ -1,0 +1,174 @@
+/* Apply the styles from the provided style guide */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Outfit' , serif;
+
+}
+body p, span , li {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%)
+} 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%)
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  margin: 20px;
+  width: 50%;
+  margin-block: 100px;
+  border-radius: 20px;
+}
+.container .img {
+  margin: 40px;
+}
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container>h1 {
+  font-family: 'Young Serif', serif;
+  font-weight: 600;
+  font-size:40px;
+  color: hsl(24, 5%, 18%);
+}
+.container > h1 , .container > p{
+  margin: 40px;
+}
+.preperation_time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  margin-inline: 40px;
+  border-radius: 20px;
+}
+.preperation_time>h2{
+  font-size: 21px;
+  color:  hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.preperation_time li span , .instructions li span{
+  font-weight: 700;
+}
+.preperation_time ul li::marker{
+  color:  hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+ .ingredients, .instructions {
+  margin: 40px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+
+.ingredients h2, .instructions h2, .nutrition h2 {
+  font-size: 25px;
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.preperation_time ul li, .ingredients ul li, .instructions ol li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.ingredients ul li::marker, .instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.nutrition{
+  margin: 40px;
+}
+.nutrition-facts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nutrition-item {
+  display: flex;
+  padding: 5px;
+}
+.nutrition-item span {
+  display: inline-block;
+  width: 50%;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+.nutrition .nutrition-item span:last-child{
+  font-weight: bold;
+   color: hsl(14, 45%, 36%);
+}
+.nutrition .nutrition-item:not(:last-child){
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+@media screen and (max-width: 586px) {
+  .container {
+  width: 100%;
+  margin-block: 0px;
+  border-radius: 0px;
+}
+.container .img {
+  margin: 0px;
+}
+.container > h1 , .container > p ,.preperation_time,.ingredients , .instructions ,.nutrition{
+  margin: 20px;
+}
+.container > h1 {
+  font-size: 30px;
+}
+}
+@media screen and (min-width : 586px) and  (max-width: 768px ) {
+.container {
+  width: 75%;
+  margin-block: 50px;
+  border-radius: 20px;
+}
+.container .img {
+  margin: 20px;
+}
+.container > h1 {
+  font-size: 30px;
+}
+.container > h1 , .container > p,.preperation_time,.ingredients , .instructions ,.nutrition {
+  margin: 30px;
+}
+}
+@media screen and (min-width : 768px) and  (max-width:992px  ) {
+.container {
+  width: 65%;
+  margin-block: 70px;
+  border-radius: 20px;
+}
+.container .img {
+  margin: 30px;
+}
+.container > h1 {
+  font-size: 35px;
+}
+.container > h1 , .container > p,.preperation_time,.ingredients , .instructions ,.nutrition {
+  margin: 35px;
+}
+}
+@media screen and (min-width : 992px) and  (max-width:1200px ) {
+.container {
+  width: 55%;
+}
+.container .img {
+  margin: 35px;
+}
+.container > h1 {
+  font-size: 37px;
+}
+.container > h1 , .container > p,.preperation_time,.ingredients , .instructions ,.nutrition {
+  margin: 37px;
+}
+}
+@media screen and (min-width : 1200px) and  (max-width:1440px ) {
+.container {
+  width: 60%;
+}
+
+}

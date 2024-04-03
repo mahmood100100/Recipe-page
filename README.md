@@ -31,4 +31,6 @@ In this project, I created a simple omelette recipe page using HTML and CSS. The
 - Flexbox
 - CSS Grid
 - Media queries for responsive design
+- Sass-style and BEM methodology
+- Mobile-first approach
 

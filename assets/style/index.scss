@@ -1,26 +1,25 @@
-$color_1: hsl(30, 10%, 34%);
-$color_2: hsl(24, 5%, 18%);
-$color_3: hsl(332, 51%, 32%);
-$color_4: hsl(14, 45%, 36%);
-$font-family_1: "Outfit", serif;
-$font-family_2: "Young Serif", serif;
-$background-color_1: hsl(30, 54%, 90%);
-$background-color_2: hsl(0, 0%, 100%);
-$background-color_3: hsl(330, 100%, 98%);
-
+$heading_primary_color: hsl(14, 45%, 36%); // Nutmeg 
+$heading_secondary_color: hsl(332, 51%, 32%); // Dark Raspberry 
+$container_bg_color: hsl(0, 0%, 100%);
+$preparation_bg_color: hsl(330, 100%, 98%);
+$content_bg_color: hsl(30, 54%, 90%);
+$text_color: hsl(30, 10%, 34%);
+$title_color: hsl(24, 5%, 18%);
+$primary_font_family: "Outfit", serif;
+$secondary_font_family: "Young Serif", serif;
 @import "https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&display=swap";
 
 body {
 	margin: 0;
-	font-family: $font-family_1;
+	font-family: $primary_font_family;
 
 	p,
 	span,
 	li {
 		font-size: 16px;
 		font-weight: 400;
-		color: $color_1;
+		color: $text_color;
 	}
 }
 
@@ -28,10 +27,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $background-color_1;
+	background-color: $content_bg_color;
 
 	&__container {
-		background-color: $background-color_2;
+		background-color: $container_bg_color;
 		overflow: hidden;
 		margin: 20px;
 		width: 100%;
@@ -47,10 +46,10 @@ body {
 		}
 
 		>h1 {
-			font-family: $font-family_2;
+			font-family: $secondary_font_family;
 			font-weight: 600;
 			font-size: 30px;
-			color: $color_2;
+			color: $title_color;
 			margin: 20px;
 		}
 
@@ -60,20 +59,20 @@ body {
 	}
 
 	&__preperation {
-		background-color: $background-color_3;
+		background-color: $preparation_bg_color;
 		padding: 20px;
 		margin: 20px;
 		border-radius: 20px;
 
 		>h2 {
 			font-size: 21px;
-			color: $color_3;
+			color: $heading_secondary_color;
 			font-weight: 700;
 		}
 
 		ul {
 			li::marker {
-				color: hsl(332, 51%, 32%);
+				color: $heading_secondary_color;
 				font-weight: bold;
 			}
 		}
@@ -85,9 +84,9 @@ body {
 
 		h2 {
 			font-size: 25px;
-			font-family: $font-family_2;
+			font-family: $secondary_font_family;
 			font-weight: 400;
-			color: $color_4;
+			color: $heading_primary_color;
 		}
 
 		ol {
@@ -96,7 +95,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -108,7 +107,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -121,9 +120,9 @@ body {
 
 		h2 {
 			font-size: 25px;
-			font-family: $font-family_2;
+			font-family: $secondary_font_family;
 			font-weight: 400;
-			color: $color_4;
+			color: $heading_primary_color;
 		}
 
 		ol {
@@ -132,7 +131,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -144,7 +143,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -157,9 +156,9 @@ body {
 
 		h2 {
 			font-size: 25px;
-			font-family: $font-family_2;
+			font-family: $secondary_font_family;
 			font-weight: 400;
-			color: $color_4;
+			color: $heading_primary_color;
 		}
 
 		ol {
@@ -168,7 +167,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -180,7 +179,7 @@ body {
 				padding-left: 15px;
 
 				&::marker {
-					color: $color_4;
+					color: $heading_primary_color;
 					font-weight: bold;
 				}
 			}
@@ -195,10 +194,11 @@ body {
 		.nutrition__item {
 			display: flex;
 			padding: 5px;
+
 			&:not(:last-child) {
 				border-bottom: 1px solid hsl(30, 18%, 87%);
 			}
-			
+
 			span {
 				display: inline-block;
 				width: 50%;
@@ -207,7 +207,7 @@ body {
 
 				&:last-child {
 					font-weight: bold;
-					color: $color_4;
+					color: $heading_primary_color;
 				}
 			}
 		}

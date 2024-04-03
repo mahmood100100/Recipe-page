@@ -1,0 +1,290 @@
+$heading_primary_color: hsl(14, 45%, 36%); // Nutmeg 
+$heading_secondary_color: hsl(332, 51%, 32%); // Dark Raspberry 
+$container_bg_color: hsl(0, 0%, 100%);
+$preparation_bg_color: hsl(330, 100%, 98%);
+$content_bg_color: hsl(30, 54%, 90%);
+$text_color: hsl(30, 10%, 34%);
+$title_color: hsl(24, 5%, 18%);
+$primary_font_family: "Outfit", serif;
+$secondary_font_family: "Young Serif", serif;
+@import "https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&display=swap";
+
+body {
+	margin: 0;
+	font-family: $primary_font_family;
+
+	p,
+	span,
+	li {
+		font-size: 16px;
+		font-weight: 400;
+		color: $text_color;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $content_bg_color;
+
+	&__container {
+		background-color: $container_bg_color;
+		overflow: hidden;
+		margin: 20px;
+		width: 100%;
+		border-radius: 0px;
+
+		.content__img {
+			margin: 0px;
+
+			>img {
+				width: 100%;
+				border-radius: 10px;
+			}
+		}
+
+		>h1 {
+			font-family: $secondary_font_family;
+			font-weight: 600;
+			font-size: 30px;
+			color: $title_color;
+			margin: 20px;
+		}
+
+		>p {
+			margin: 20px;
+		}
+	}
+
+	&__preperation {
+		background-color: $preparation_bg_color;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 20px;
+
+		>h2 {
+			font-size: 21px;
+			color: $heading_secondary_color;
+			font-weight: 700;
+		}
+
+		ul {
+			li::marker {
+				color: $heading_secondary_color;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__ingredients {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $secondary_font_family;
+			font-weight: 400;
+			color: $heading_primary_color;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	&__instructions {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $secondary_font_family;
+			font-weight: 400;
+			color: $heading_primary_color;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	&__nutrition {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $secondary_font_family;
+			font-weight: 400;
+			color: $heading_primary_color;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $heading_primary_color;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.nutrition__facts {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.nutrition__item {
+			display: flex;
+			padding: 5px;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid hsl(30, 18%, 87%);
+			}
+
+			span {
+				display: inline-block;
+				width: 50%;
+				padding-block: 10px;
+				padding-inline: 20px;
+
+				&:last-child {
+					font-weight: bold;
+					color: $heading_primary_color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 586px) {
+	.content {
+		&__container {
+			width: 85%;
+			border-radius: 20px;
+
+			>h1 {
+				font-size: 35px;
+				margin: 35px;
+			}
+
+			>p {
+				margin: 35px;
+			}
+		}
+
+		&__preperation,
+		&__ingredients,
+		&__instructions,
+		&__nutrition {
+			margin: 35px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content {
+		&__container {
+			width: 75%;
+			margin-block: 50px;
+
+			.content__img {
+				margin: 40px;
+			}
+
+			>h1 {
+				font-size: 30px;
+				margin: 40px;
+			}
+
+			>p {
+				margin: 40px;
+			}
+		}
+
+		&__preperation,
+		&__ingredients,
+		&__instructions,
+		&__nutrition {
+			margin: 40px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.content {
+		&__container {
+			width: 65%;
+			margin-block: 70px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.content {
+		&__container {
+			width: 55%;
+
+			>h1 {
+				font-size: 35px;
+			}
+		}
+	}
+}

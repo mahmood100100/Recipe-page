@@ -1,0 +1,290 @@
+$color_1: hsl(30, 10%, 34%);
+$color_2: hsl(24, 5%, 18%);
+$color_3: hsl(332, 51%, 32%);
+$color_4: hsl(14, 45%, 36%);
+$font-family_1: "Outfit", serif;
+$font-family_2: "Young Serif", serif;
+$background-color_1: hsl(30, 54%, 90%);
+$background-color_2: hsl(0, 0%, 100%);
+$background-color_3: hsl(330, 100%, 98%);
+
+@import "https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&display=swap";
+
+body {
+	margin: 0;
+	font-family: $font-family_1;
+
+	p,
+	span,
+	li {
+		font-size: 16px;
+		font-weight: 400;
+		color: $color_1;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $background-color_1;
+
+	&__container {
+		background-color: $background-color_2;
+		overflow: hidden;
+		margin: 20px;
+		width: 100%;
+		border-radius: 0px;
+
+		.content__img {
+			margin: 0px;
+
+			>img {
+				width: 100%;
+				border-radius: 10px;
+			}
+		}
+
+		>h1 {
+			font-family: $font-family_2;
+			font-weight: 600;
+			font-size: 30px;
+			color: $color_2;
+			margin: 20px;
+		}
+
+		>p {
+			margin: 20px;
+		}
+	}
+
+	&__preperation {
+		background-color: $background-color_3;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 20px;
+
+		>h2 {
+			font-size: 21px;
+			color: $color_3;
+			font-weight: 700;
+		}
+
+		ul {
+			li::marker {
+				color: hsl(332, 51%, 32%);
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__ingredients {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $font-family_2;
+			font-weight: 400;
+			color: $color_4;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	&__instructions {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $font-family_2;
+			font-weight: 400;
+			color: $color_4;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	&__nutrition {
+		margin: 20px;
+		border-bottom: 1px solid hsl(30, 18%, 87%);
+
+		h2 {
+			font-size: 25px;
+			font-family: $font-family_2;
+			font-weight: 400;
+			color: $color_4;
+		}
+
+		ol {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+
+		ul {
+			li {
+				margin-block: 10px;
+				padding-left: 15px;
+
+				&::marker {
+					color: $color_4;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.nutrition__facts {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.nutrition__item {
+			display: flex;
+			padding: 5px;
+			&:not(:last-child) {
+				border-bottom: 1px solid hsl(30, 18%, 87%);
+			}
+			
+			span {
+				display: inline-block;
+				width: 50%;
+				padding-block: 10px;
+				padding-inline: 20px;
+
+				&:last-child {
+					font-weight: bold;
+					color: $color_4;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 586px) {
+	.content {
+		&__container {
+			width: 85%;
+			border-radius: 20px;
+
+			>h1 {
+				font-size: 35px;
+				margin: 35px;
+			}
+
+			>p {
+				margin: 35px;
+			}
+		}
+
+		&__preperation,
+		&__ingredients,
+		&__instructions,
+		&__nutrition {
+			margin: 35px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content {
+		&__container {
+			width: 75%;
+			margin-block: 50px;
+
+			.content__img {
+				margin: 40px;
+			}
+
+			>h1 {
+				font-size: 30px;
+				margin: 40px;
+			}
+
+			>p {
+				margin: 40px;
+			}
+		}
+
+		&__preperation,
+		&__ingredients,
+		&__instructions,
+		&__nutrition {
+			margin: 40px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.content {
+		&__container {
+			width: 65%;
+			margin-block: 70px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.content {
+		&__container {
+			width: 55%;
+
+			>h1 {
+				font-size: 35px;
+			}
+		}
+	}
+}

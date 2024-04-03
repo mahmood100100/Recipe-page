@@ -1,0 +1,211 @@
+@import "https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Outfit:wght@400,600,700&display=swap";
+body {
+  margin: 0;
+  font-family: "Outfit", serif;
+}
+body p,
+body span,
+body li {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+}
+.content__container {
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  margin: 20px;
+  width: 100%;
+  border-radius: 0px;
+}
+.content__container .content__img {
+  margin: 0px;
+}
+.content__container .content__img > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.content__container > h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: hsl(24, 5%, 18%);
+  margin: 20px;
+}
+.content__container > p {
+  margin: 20px;
+}
+.content__preperation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.content__preperation > h2 {
+  font-size: 21px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.content__preperation ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+.content__ingredients {
+  margin: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.content__ingredients h2 {
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.content__ingredients ol li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__ingredients ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__ingredients ul li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__instructions {
+  margin: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.content__instructions h2 {
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.content__instructions ol li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__instructions ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__instructions ul li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__instructions ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__nutrition {
+  margin: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.content__nutrition h2 {
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.content__nutrition ol li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__nutrition ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__nutrition ul li {
+  margin-block: 10px;
+  padding-left: 15px;
+}
+.content__nutrition ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.content__nutrition .nutrition__facts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.content__nutrition .nutrition__item {
+  display: flex;
+  padding: 5px;
+}
+.content__nutrition .nutrition__item:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.content__nutrition .nutrition__item span {
+  display: inline-block;
+  width: 50%;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+.content__nutrition .nutrition__item span:last-child {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+@media screen and (min-width: 586px) {
+  .content__container {
+    width: 85%;
+    border-radius: 20px;
+  }
+  .content__container > h1 {
+    font-size: 35px;
+    margin: 35px;
+  }
+  .content__container > p {
+    margin: 35px;
+  }
+  .content__preperation, .content__ingredients, .content__instructions, .content__nutrition {
+    margin: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content__container {
+    width: 75%;
+    margin-block: 50px;
+  }
+  .content__container .content__img {
+    margin: 40px;
+  }
+  .content__container > h1 {
+    font-size: 30px;
+    margin: 40px;
+  }
+  .content__container > p {
+    margin: 40px;
+  }
+  .content__preperation, .content__ingredients, .content__instructions, .content__nutrition {
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .content__container {
+    width: 65%;
+    margin-block: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__container {
+    width: 55%;
+  }
+  .content__container > h1 {
+    font-size: 35px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

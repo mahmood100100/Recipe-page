@@ -21,8 +21,8 @@ In this project, I created a simple omelette recipe page using HTML and CSS. The
 
 ### Links
 
-- Solution URL: (https://github.com/mahmood100100/Recipe-page/tree/solution)
-- Live Site URL:(https://github.com/mahmood100100/Recipe-page)
+- Solution URL: (https://github.com/mahmood100100/Recipe-page/)
+- Live Site URL:(https://mahmood100100.github.io/Recipe-page/)
 
 ### Built with
 
